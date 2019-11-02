@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "Streamster";
+  src: URL("Streamster.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Lalezar", cursive; */
+}
+
+#everything {
+  opacity: 0.4;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#defaultCanvas0 {
+  /* text-align: center; */
+  width: 640px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+  bottom: 40.5%;
+  position: relative;
+}
+
+.fa-info-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 25px;
+  color: white;
+  font-size: 35px;
+}
+
+html,
+body {
+  background: linear-gradient(#282929, #030303);
+}
+button {
+  width: 0.1px;
+}
+.title {
+  font-size: 70px;
+  top: 3%;
+  text-align: center;
+  color: white;
+  font-family: "Streamster";
+}
+
+#aboutContainer {
+  background-color: #030303;
+  font-family: "Tinos", serif;
+  height: 375px;
+  width: 55%;
+  bottom: 200px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  text-align: center;
+}
+
+#introBox #endTutorial {
+  width: 20%;
+  /* position */
+  position: absolute;
+  right: 5px;
+  /* right: 0; */
+  top: 30px;
+  height: 10%;
+  margin-right: 20px;
+}
+#gameOverText {
+  font-family: "Streamster";
+  /* bottom: 200px; */
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  display: none;
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+
+#introBox,
+#secondIntro,
+#thirdIntro,
+#fourthIntro {
+  background-color: white;
+  font-family: "Tinos", serif;
+  height: 460px;
+  width: 55%;
+  bottom: 200px;
+  left: 0;
+  margin: 350px auto 50px auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* display: none; */
+  text-align: center;
+  border-radius: 30px;
+}
+
+#secondIntro,
+#thirdIntro,
+#fourthIntro {
+  display: none;
+}
+#introBox button,
+#secondIntro button,
+#thirdIntro button,
+#fourthIntro button {
+  border-radius: 10px;
+
+  width: 60%;
+  /* position */
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+#introBox img,
+#secondIntro img,
+#thirdIntro img,
+#fourthIntro img {
+  width: 40%;
+}
+
+#introBox p,
+#secondIntro p,
+#thirdIntro p,
+#fourthIntro p {
+  color: black;
+  margin: 15px;
+}
+
+.fa-times {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  font-size: 35px;
+  margin: 10px;
+}
+#aboutContainer > p,
+#aboutContainer > h5 {
+  color: white;
+  margin: 15px 50px 15px 50px;
+}
+#introBox h5,
+#secondIntro h5,
+#thirdIntro h5,
+#fourthIntro h5,
+.aboutCounter h5 {
+  font-size: 30px;
+  /* margin: 15px auto 15px auto; */
+  color: white;
+}
+
+#world {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  overflow: hidden;
+  top: 0;
+}
+#sketch-div {
+  text-align: center;
+}
+
+#score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 25px;
+  color: white;
+  font-size: 35px;
+  font-family: "Tinos", serif;
+}

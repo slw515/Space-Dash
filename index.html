@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Space Dash</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/fontawesome/css/all.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/ml5@0.1.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../logo.ico" />
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="everything">
+      <div class="title">Space Dash</div>
+      <div id="score"></div>
+      <div id="sketch-div"></div>
+      <div class="center">
+        <!-- <img src="bluemountain.png" id="mountains" /> -->
+      </div>
+
+      <div id="world"></div>
+      <button onclick="putAbout()">
+        <i class="fas fa-info-circle"></i>
+      </button>
+    </div>
+    <div id="aboutContainer">
+      <i class="fas fa-times" onclick="putAbout()"></i>
+      <h5>About The Game</h5>
+      <p>
+        <em>Space Dash</em> was developed using Three JS to create the game
+        design and mechanics as well as Posenet for accurate body position
+        tracking. p5.js was used in order to render the camera as well as
+        retrieve information from the Posenet library
+      </p>
+    </div>
+    <div id="introBox">
+      <h5>How To Play</h5>
+      <img src="howto.png" />
+      <p>
+        Stand in front of the camera and keep your shoulders (marked by the pink
+        circles) in the pink rectangle! Make sure to enable your camera to play
+        the game.
+      </p>
+      <button type="button" class="btn btn-dark" onclick="removeFirst()">
+        Next Step!
+      </button>
+      <button
+        type="button"
+        class="btn btn-dark"
+        id="endTutorial"
+        onclick="endTutorial()"
+      >
+        Skip Tutorial!
+      </button>
+    </div>
+    <div id="secondIntro">
+      <h5>How To Play</h5>
+      <img src="lean.png" />
+      <p>
+        Lean your torso to the left or to the right while keeping your legs
+        straight to control the balls direction!
+      </p>
+      <button type="button" class="btn btn-dark" onclick="removeSecond()">
+        Next Step!
+      </button>
+    </div>
+    <div id="thirdIntro">
+      <h5>How To Play</h5>
+      <img src="jump.png" />
+      <p>
+        Jump to make the ball jump!
+      </p>
+      <button type="button" class="btn btn-dark" onclick="removeThird()">
+        Next Step!
+      </button>
+    </div>
+    <div id="fourthIntro">
+      <h5>How To Play</h5>
+      <img src="ring.png" />
+      <p>
+        Avoid the red rings and hit the purple rings for extra points!
+      </p>
+      <button type="button" class="btn btn-dark" onclick="removeFourth()">
+        Proceed to Game!
+      </button>
+    </div>
+    <!-- <div > -->
+    <h5 id="gameOverText">Game Over! Press the down key to play again!</h5>
+    <!-- </div> -->
+  </body>
+</html>
