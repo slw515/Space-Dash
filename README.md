@@ -3,6 +3,8 @@ Game that features position tracking using Posenet. Developed using p5.js and th
 
 Using Posent to track the body using the webcame, the ball on screen can be controlled by tilting your body and by jumping. Avoid the red rings and hit the violet ones for extra points.
 
+![Space Dash main interface](https://raw.githubusercontent.com/slw515/Space-Dash/master/spacedash.png)
+
 # Documentation
 
 Final-Project-Documentation
